@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./styles/book.css">
+</head>
+<body>
+	<button id="formButton" type="button">New Book</button>
+	<form id="myform" style="display: none;">
+		<label for="BookName">Book Name: </label>
+		<input type="text" id="BookName" name="BookName" placeholder="The Originals">
+		
+		<label for="author">Author: </label>
+		<input type="text" id="author" name="author" placeholder="Author of the Book">
+
+		<label for="pages">Pages: </label>
+		<input type="text" id="pages" name="pages" placeholder="10-10000">
+	</form>
+	<input id="Add" type="button" value="Add Books" onclick="createTable()">
+	<table class="lib" border="1" height="500" width="500">
+		<thead>
+			<tr>
+				<td id="bn">BR</td>
+				<td>Book Name</td>
+				<td>Author</td>
+				<td>No. of Pages</td>
+			</tr>
+		</thead>
+		<tbody id="contents">
+			
+		</tbody>			
+	</table>
+	
+	
+	<script src="Books.js" defer></script>
+</body>
+</html>

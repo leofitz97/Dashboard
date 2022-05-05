@@ -1,0 +1,17 @@
+
+.BR {
+    background-color: blue;
+    height: 50px;
+    margin-left: 30px;
+}
+#bn {
+    height: 15px;
+}
+.btn-col{
+    background-color: violet;
+    height: 20px;
+}
+
+.contents .tr td:nth-last-child(1){
+    background-color: aqua;
+}
